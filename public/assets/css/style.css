@@ -29,6 +29,10 @@ header ul li a{
     text-decoration: none;
     color:#323A45;
 }
+footer p{
+    text-align: center;
+    font-size: 1.25rem;
+}
 .addProduct h1{
     font-size: 2.25rem;
     text-align: center;
