@@ -1,0 +1,40 @@
+body{
+    font-family: 'Karla', sans-serif;
+    color: #323A45;
+}
+
+.addProduct{
+    margin: 0 10%;
+}
+
+.addProduct h1{
+    font-size: 2.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.addProduct form{
+    display: flex;
+    flex-direction: column;  
+}
+
+.addProduct input, textarea{
+    margin-top: 2vh;
+    background: #E5E5E5;
+    border-radius: 5px;
+    text-align: center;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+}
+.addProduct input{
+    height: 3rem;
+
+}
+
+.addProduct input[type="submit"]{
+    background: rgba(50, 58, 69, 0.6);
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
