@@ -1,12 +1,34 @@
 body{
     font-family: 'Karla', sans-serif;
     color: #323A45;
-}
-
-.addProduct{
     margin: 0 10%;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    }
+header p{
+    font-size: 1.25rem;
+}    
+
+header ul{
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+header ul li{
+    padding-left: 19%;
+    white-space: nowrap;
+}
+
+header ul li a{
+    font-size: 0.875rem;
+    text-decoration: none;
+    color:#323A45;
+}
 .addProduct h1{
     font-size: 2.25rem;
     text-align: center;

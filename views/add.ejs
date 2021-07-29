@@ -1,32 +1,32 @@
 <%- include('./partials/head') %>
 
-    <body>
-        <main class="addProduct">
+
+    <main class="addProduct">
 
 
-            <h1>Add A New PRODUCT</h1>
-            <form action="/add" method="post">
-                <input type="text" placeholder="Product-name" name="product" required>
-                <input type="text" name="url" placeholder="Url Picture" required>
-                <input type="text" name="compagny" placeholder="Compagny" required>
-                <input type="number" name="price" placeholder="Price" required>
-                <textarea name="description" cols="30" rows="10" placeholder="Write your article here....."
-                    required></textarea>
-                <input type="submit" value="ADD PRODUCT">
-            </form>
-            <h2>RANDOM PRODUCT</h2>
-            <div>
-                <% data.forEach(item=>{%>
-                    <a href="/add/<%= item._id %> ">
-                        <img src=<%=item.url %> alt="">
-                        <h2>
-                            <%= item.product %>
-                        </h2>
-                    </a>
-                    <% }) %>
+        <h1>Add A New PRODUCT</h1>
+        <form action="/add" method="post">
+            <input type="text" placeholder="Product-name" name="product" required>
+            <input type="text" name="url" placeholder="Url Picture" required>
+            <input type="text" name="compagny" placeholder="Compagny" required>
+            <input type="number" name="price" placeholder="Price" required>
+            <textarea name="description" cols="30" rows="10" placeholder="Write your article here....."
+                required></textarea>
+            <input type="submit" value="ADD PRODUCT">
+        </form>
+        <h2>RANDOM PRODUCT</h2>
+        <div>
+            <% data.forEach(item=>{%>
+                <a href="/add/<%= item._id %> ">
+                    <img src=<%=item.url %> alt="">
+                    <h2>
+                        <%= item.product %>
+                    </h2>
+                </a>
+                <% }) %>
 
-            </div>
-        </main>
+        </div>
+    </main>
     </body>
 
     </html>
