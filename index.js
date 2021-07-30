@@ -25,7 +25,11 @@ mongoose.connect(process.env.DBURL, { useNewUrlParser: true, useUnifiedTopology:
     })
 
 app.get('/', (req, res) => {
-    res.render('index')
+    ShopItem.find()
+        .then((result) => {
+            res.render('index', { data: result })
+        })
+        .catch((err) => console.log(err))
 })
 
 app.get('/add', (req, res) => {
