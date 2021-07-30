@@ -21,15 +21,13 @@
         <p class="description">
             <%= data.description %>
         </p>
-        <div class="buy-button">
-            <button>BUY PRODUCT</button>
-        </div>
+        <h1>EDIT PRODUCT</h1>
         <form action="/add/<%= data._id%>/edit" method="post">
             <input type="text" value="<%=data.product%>" name="product" required>
             <input type="text" name="url" value="<%= data.url%>" required>
             <input type="text" name="compagny" value="<%= data.compagny%>" required>
             <input type="number" name="price" value="<%= data.price%>" required>
-            <textarea name="description" cols="30" rows="10" required><%= data.description %></textarea>
+            <textarea name="description" cols="30" rows="5" required><%= data.description %></textarea>
             <input type="submit" value="EDIT PRODUCT">
         </form>
     </main>

@@ -39,15 +39,15 @@ footer p{
     text-align: center;
     text-transform: uppercase;
     font-weight: normal;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
 }
 
-.addProduct form{
+.addProduct form, .edit form{
     display: flex;
     flex-direction: column;  
 }
 
-.addProduct input, textarea{
+.addProduct input, .addProduct textarea, .edit input, .edit textarea{
     margin-top: 2vh;
     background: #E5E5E5;
     border-radius: 5px;
@@ -55,12 +55,12 @@ footer p{
     border:none;
     font-family: 'Open Sans', sans-serif;
 }
-.addProduct input{
+.addProduct input, .edit input{
     height: 3rem;
 
 }
 
-.addProduct input[type="submit"]{
+.addProduct input[type="submit"], .edit input[type="submit"]{
     background: rgba(50, 58, 69, 0.6);
     color: #fff;
     font-size: 1.125rem;
@@ -89,17 +89,13 @@ footer p{
     margin: 5vh 0;
 }
 
-.random img{
-    width: 100%;
 
-}
 .random{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
 }
-.shop-article{
-    margin-bottom: 8vh;
-}
+
 .shop-article figcaption{
     display: flex;
     justify-content: space-between;
@@ -139,10 +135,10 @@ footer p{
     width: 100%;
 }
 .shop-article{
-    margin: 0;
+    margin: 0 0 8vh 0;
 }
 
-.item h3{
+.item h3, .edit h3{
     margin: 7vh 0 4vh 0;
     font-size: 1.0625rem;
     font-weight: normal;
@@ -162,4 +158,19 @@ footer p{
 }
 .item .buy-button{
     text-align: right;
+}
+/* Styling edit */
+.edit h1{
+    text-align: center;
+    color: rgba(50, 58, 69, 0.8);
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 12vh 0 7vh 0;
+}
+
+.edit form{
+    margin-bottom: 10vh;
+}
+.edit input, textarea{
+    color: rgba(50, 58, 69, 0.5);
 }
