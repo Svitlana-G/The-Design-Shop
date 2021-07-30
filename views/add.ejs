@@ -14,16 +14,35 @@
                 required></textarea>
             <input type="submit" value="ADD PRODUCT">
         </form>
-        <h2>RANDOM PRODUCT</h2>
-        <div>
-            <% data.forEach(item=>{%>
-                <a href="/add/<%= item._id %> ">
-                    <img src=<%=item.url %> alt="">
-                    <h2>
-                        <%= item.product %>
-                    </h2>
-                </a>
-                <% }) %>
+        <div class="line">
+            <div class="line1"></div>
+            <img class="eyes" src="/assets/img/eyes.png" alt="">
+            <div class="line2"></div>
+        </div>
+        <h1>RANDOM PRODUCT</h1>
+        <div class="random">
+            <% for(let item=0; item<6; item++){%>
+                <figure>
+                    <a href="/add/<%= data[item]._id %> ">
+                        <img src=<%=data[item].url %> alt="">
+                    </a>
+                    <figcaption>
+                        <div>
+                            <h2>
+                                <%= data[item].product %>
+                            </h2>
+                            <span>
+                                <%= data[item].compagny%>
+                            </span>
+                        </div>
+                        <p>
+                            $<%= data[item].price %>.00
+                        </p>
+
+                    </figcaption>
+                </figure>
+                <% } %>
+
 
         </div>
     </main>

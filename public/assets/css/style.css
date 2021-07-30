@@ -38,6 +38,7 @@ footer p{
     text-align: center;
     text-transform: uppercase;
     font-weight: normal;
+    margin-bottom: 5vh;
 }
 
 .addProduct form{
@@ -63,4 +64,57 @@ footer p{
     color: #fff;
     font-size: 1.125rem;
     font-weight: bold;
+}
+
+.eyes {
+    width: 5%;
+    margin: 0 auto;
+    display: block;
+}
+
+.line1{
+    border-bottom: 1px solid #000;
+    height: 3vh;
+    width: 50%;
+}
+
+.line2{
+    border-bottom: 1px solid #000;
+    height: 3vh;
+    width: 50%;
+}
+.line{
+    display: flex;
+    margin: 5vh 0;
+}
+
+.random img{
+    width: 100%;
+
+}
+.random{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.random figure{
+    margin-bottom: 8vh;
+}
+.random figcaption{
+    display: flex;
+    justify-content: space-between;
+}
+
+.random figcaption h2{
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.random figcaption span{
+    color: #848484;
+    font-size: .875rem;
+}
+
+.random figcaption p{
+    margin: 0;
 }
