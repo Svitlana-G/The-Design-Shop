@@ -33,6 +33,7 @@ footer p{
     text-align: center;
     font-size: 1.25rem;
 }
+/* Seite add */
 .addProduct h1{
     font-size: 2.25rem;
     text-align: center;
@@ -96,25 +97,69 @@ footer p{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
-.random figure{
+.shop-article{
     margin-bottom: 8vh;
 }
-.random figcaption{
+.shop-article figcaption{
     display: flex;
     justify-content: space-between;
 }
 
-.random figcaption h2{
+.shop-article figcaption h2{
     font-size: 1rem;
     font-weight: normal;
     margin: 0;
 }
 
-.random figcaption span{
+.shop-article figcaption span{
     color: #848484;
     font-size: .875rem;
 }
 
-.random figcaption p{
+.shop-article figcaption p{
     margin: 0;
+}
+
+/* Seite ShopItem */
+
+.item section{
+    text-align: right;
+}
+
+.item section a{
+    text-decoration: none;
+    color:#848484;
+    padding-left: 2%;
+    font-size: .875rem;
+    text-align: right;
+    display: inline-block;
+}
+
+.shop-article img{
+    width: 100%;
+}
+.shop-article{
+    margin: 0;
+}
+
+.item h3{
+    margin: 7vh 0 4vh 0;
+    font-size: 1.0625rem;
+    font-weight: normal;
+}
+
+.description{
+    font-size: .875rem;
+    line-height: 1.5rem;
+    margin-bottom: 5vh;
+}
+
+.item button{
+    bottom: 5vh;
+    padding: 3vh 5%;
+    background-color: #fff;
+    margin-bottom: 8vh;
+}
+.item .buy-button{
+    text-align: right;
 }
