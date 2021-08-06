@@ -190,6 +190,6 @@ footer p{
     gap: 2rem;
 }
 
-.all .shop-article:nth-child(6n+1){
+.all .shop-article:nth-child(7n+1){
     grid-column: 1/4;
 }

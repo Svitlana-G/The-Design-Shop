@@ -3,19 +3,19 @@
         <% data.forEach(element=> {%>
             <figure class="shop-article">
                 <a href="/add/<%= element._id %> ">
-                    <img src=<%=element.url %> alt="">
+                    <img src=<%=element.ProductLink %> alt="">
                 </a>
                 <figcaption>
                     <div>
                         <h2>
-                            <%= element.product %>
+                            <%= element.ProductName %>
                         </h2>
                         <span>
-                            <%= element.compagny%>
+                            <%= element.Company%>
                         </span>
                     </div>
                     <p>
-                        $<%= element.price %>.00
+                        <%= element.Price %>
                     </p>
 
                 </figcaption>

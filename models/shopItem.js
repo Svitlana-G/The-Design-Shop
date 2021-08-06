@@ -3,29 +3,29 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const shopItemSchema = new Schema({
-    product: {
+    ProductName: {
         type: String,
         required: true
     },
-    url: {
+    Company: {
         type: String,
         required: true
     },
-    compagny: {
+    Price: {
         type: String,
         required: true
     },
-    price: {
-        type: Number,
+    ProductLink: {
+        type: String,
         required: true
     },
-    description: {
+    Description: {
         type: String,
         required: true
     }
 
 }, { timestamps: true })
 
-const ShopItem = mongoose.model('shopdata', shopItemSchema)
+const ShopItem = mongoose.model('products', shopItemSchema)
 
 module.exports = ShopItem

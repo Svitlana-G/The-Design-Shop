@@ -10,7 +10,7 @@
             <input type="text" placeholder="Product-name" name="product" required>
             <input type="text" name="url" placeholder="Url Picture" required>
             <input type="text" name="compagny" placeholder="Compagny" required>
-            <input type="number" name="price" placeholder="Price" required>
+            <input type="text" name="price" placeholder="Price" required>
             <textarea name="description" cols="30" rows="10" placeholder="Write your article here....."
                 required></textarea>
             <input type="submit" value="ADD PRODUCT">
@@ -22,22 +22,22 @@
         </div>
         <h1>RANDOM PRODUCT</h1>
         <div class="random">
-            <% for(let item=0; item<6; item++){%>
+            <% for(let item=1; item<7; item++){%>
                 <figure class="shop-article">
                     <a href="/add/<%= data[item]._id %> ">
-                        <img src=<%=data[item].url %> alt="">
+                        <img src=<%=data[item].ProductLink %> alt="">
                     </a>
                     <figcaption>
                         <div>
                             <h2>
-                                <%= data[item].product %>
+                                <%= data[item].ProductName %>
                             </h2>
                             <span>
-                                <%= data[item].compagny%>
+                                <%= data[item].Company%>
                             </span>
                         </div>
                         <p>
-                            $<%= data[item].price %>.00
+                            <%= data[item].Price %>
                         </p>
 
                     </figcaption>

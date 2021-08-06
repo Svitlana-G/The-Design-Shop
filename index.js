@@ -43,11 +43,11 @@ app.get('/add', (req, res) => {
 app.post('/add', (req, res) => {
     console.log(req.body)
     const shopItem = new ShopItem({
-        product: req.body.product,
-        url: req.body.url,
-        compagny: req.body.compagny,
-        price: req.body.price,
-        description: req.body.description
+        ProductName: req.body.product,
+        Company: req.body.compagny,
+        Price: req.body.price,
+        ProductLink: req.body.url,
+        Description: req.body.description
     })
     shopItem.save()
         .then((result) => {
@@ -67,11 +67,11 @@ app.get('/add/:id', (req, res) => {
 
 app.post('/add/:id/edit', (req, res) => {
     const updateItem = {
-        product: req.body.product,
-        url: req.body.url,
-        compagny: req.body.compagny,
-        price: req.body.price,
-        description: req.body.description
+        ProductName: req.body.product,
+        Company: req.body.compagny,
+        Price: req.body.price,
+        ProductLink: req.body.url,
+        Description: req.body.description
     }
     console.log(updateItem)
     console.log(req.body)

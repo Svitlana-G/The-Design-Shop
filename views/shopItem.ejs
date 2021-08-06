@@ -6,25 +6,25 @@
         </section>
 
         <figure class="shop-article">
-            <img src=<%=data.url %> alt="">
+            <img src=<%=data.ProductLink %> alt="">
 
             <figcaption>
                 <div>
                     <h2>
-                        <%=data.product%>
+                        <%=data.ProductName%>
                     </h2>
                     <span>
-                        <%=data.compagny%>
+                        <%=data.Company%>
                     </span>
                 </div>
                 <p>
-                    $<%=data.price%>.00
+                    <%=data.Price%>
                 </p>
             </figcaption>
         </figure>
         <h3>Product Description:</h3>
         <p class="description">
-            <%= data.description %>
+            <%= data.Description %>
         </p>
         <div class="buy-button">
             <button>BUY PRODUCT</button>
